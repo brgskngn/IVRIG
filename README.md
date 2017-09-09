@@ -2,7 +2,7 @@
 Small Ruby program that quizzes you on Swedish irregular verbs.
 Written with Ruby 2.3.1
 
-The Irregular Verbs Really Interesting Game (IVRIG) is a small, simple program with only one purpose in life: to quiz learners of the Swedish language on strong and irregular verbs.
+The Irregular Verbs Really Interesting Game (IVRIG) is a small, simple program with only one purpose in life: to quiz learners of the Swedish language on strong and irregular verbs. It asks you questions & keeps score on how many questions you answered and how many of those you answered correctly.
 
 There are two different versions:
 - Ivrig.rb: this is the default version.
