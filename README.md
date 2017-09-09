@@ -14,6 +14,6 @@ Some more notes:
 - There are about a hundred verbs in here. It's probably not an exhaustive list of all relevant verbs though.
 - Where there exist alternate forms of a verb, I chose the more irregular one. So, for example, this program uses “simma - simmar - sam - summit” even though “simma - simmar - simmade - simmat” is also correct.
 - Many verbs have more than one meaning. This program uses what I consider the 'main' or most common meaning but depending on the verb it allows up to two alternate translations. For example, the main translation of 'rinna' is 'flow' but 'run' is also accepted.
-- There are two different irregular verbs that mean 'to fall' and 'to pinch'. This is 100% the fault of Sweden, I can't think of a better translation for either word, so you'll just have to rage when the program mocks you for guessing wrong :)
+- There are two different irregular verbs each that mean 'to fall' and 'to pinch'. This is 100% the fault of Sweden, I can't think of a better translation for either word, so you'll just have to rage when the program mocks you for guessing wrong :)
 
 Feedback is always welcome :) Contact me here or on tumblr (@clouds-of-wings)
