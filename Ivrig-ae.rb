@@ -265,7 +265,7 @@ verbname = vocab[verb][0]
 
 verbform = 0
 while verbform == 0
-verbform = rand(4)
+verbform = rand(5)
 end
 
 if verbform.to_i == 0
@@ -298,14 +298,14 @@ puts
 # Here comes the second mode: It gives you a verb form and asks you to give a different form of the same verb.
 else
 
-verbform = rand(4)
+verbform = rand(5)
 
 verb = rand(vocab.length.to_i)
 
-answverbno = rand(4)
+answverbno = rand(5)
 
 while answverbno == verbform
-answverbno = rand(4)
+answverbno = rand(5)
 end
 
 answverb = vocab[verb][answverbno]
