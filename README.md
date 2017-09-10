@@ -7,7 +7,7 @@ The Irregular Verbs Really Interesting Game (IVRIG) is a small, simple program w
 How to install: Install Ruby.
 https://www.ruby-lang.org/
 
-Download one of the Ivrig files. Double-click it or open it in the terminal. Done.
+Download one of the Ivrig files. Double-click it (Windows) or run it in the terminal (Linux). Done.
 
 There are two different versions:
 - Ivrig.rb: this is the default version.
@@ -19,6 +19,6 @@ Some more notes:
 - There are about a hundred verbs in here. It's probably not an exhaustive list of all relevant verbs though.
 - Where there exist alternate forms of a verb, I chose the more irregular one. So, for example, this program uses “simma - simmar - sam - summit” even though “simma - simmar - simmade - simmat” is also correct.
 - Many verbs have more than one meaning. This program uses what I consider the 'main' or most common meaning but depending on the verb it allows up to two alternate translations. For example, the main translation of 'rinna' is 'flow' but 'run' is also accepted.
-- There are two different irregular verbs that mean each 'to fall' and 'to pinch'. This is 100% the fault of Sweden, I can't think of a better translation for any of the 4 words, so you'll just have to rage when the program mocks you for guessing wrong :)
+- There are two different irregular verbs that mean each 'to fall' (dimpa and falla) and 'to pinch' (knipa and nypa). This is 100% the fault of Sweden, I can't think of a better translation for any of the 4 words, so you'll just have to rage when the program mocks you for guessing wrong :) But that should only happen once in 200 questions, statistically speaking, and you have a one in two chance of guessing right when it does.
 
 Feedback is always welcome :) Contact me here or on tumblr (@clouds-of-wings)
