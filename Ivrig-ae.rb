@@ -18,12 +18,13 @@ def blue(text); colours(text, 96); end
 puts yellow('Welcome to Irregular Verbs Really Interesting Game (IVRIG) 2.0!')
 puts
 puts blue('You will be quizzed on strong and irregular Swedish verbs. Please note: the answers are not case-sensitive. So feel free to SHOUT if you need to :)')
+puts blue('This version is for umlaut-challenged systems. So type \'aa\' in place of \'å\', \'ae\' in place of \'ä\' and \'oe\' in place of \'ö\'.')
 puts
 puts yellow('Type \'end\' (without the \') when you want to quit. The game will tell you your score.')
 
 if chronicle == 0
 puts
-puts yellow('You can also create a chronicle file that will list all your practice sessions and results. Open Ivrig.rb in a text editor and find the instructions at the top of the file if you\'re interested.')
+puts yellow('You can also create a chronicle file that will list all your practice sessions and results. Open Ivrig-ae.rb in a text editor and find the instructions at the top of the file if you\'re interested.')
 puts
 puts blue('Press Enter to begin.')
 gets
@@ -41,7 +42,6 @@ end
 
 
 vocab = [
-
 ['ask (infinitive form has 3 letters)','be','ber','bad','bett','beg','pray',],
 
 ['ask (infinitive form has 5 letters)','bedja','beder','bad','bett','ask','pray','beg'],
@@ -50,21 +50,21 @@ vocab = [
 
 ['bite','bita','biter','bet','bitit'],
 
-['should','böra','bör','borde','bort','ought','ought to'],
-
-['offer','bjuda','bjuder','bjöd','bjudit','order','invite'],
+['offer','bjuda','bjuder','bjoed','bjudit','order','invite'],
 
 ['become','bli','blir','blev','blivit','stay'],
+
+['should','boera','boer','borde','bort','ought','ought to'],
 
 ['burn','brinna','brinner','brann','brunnit'],
 
 ['snap','brista','brister','brast','brustit','burst','split'],
 
-['break','bryta','bryter','bröt','brutit'],
+['break','bryta','bryter','broet','brutit'],
 
-['bear','bära','bär','bar','burit','carry'],
+['bear','baera','baer','bar','burit','carry'],
 
-['fall (starts with d)','dimpa','dimper','damp','dumpit','fall'],
+['fall','dimpa','dimper','damp','dumpit'],
 
 ['drag','dra','drar','drog','dragit'],
 
@@ -72,13 +72,13 @@ vocab = [
 
 ['drive','driva','driver','drev','drivit','tease'],
 
-['be suitable','duga','duger','dög','dugt','suffice','be useful','be appropriate'],
+['conceal','doelja','doeljer','dolde','dolt','hide'],
 
-['die','dö','dör','dog','dött'],
+['be suitable','duga','duger','doeg','dugt','suffice','be useful'],
 
-['conceal','dölja','döljer','dolde','dolt','hide'],
+['die','doe','doer','dog','doett'],
 
-['fall (starts with f)','falla','faller','föll','fallit','fall'],
+['fall','falla','faller','foell','fallit'],
 
 ['travel','fara','far','for','farit','go'],
 
@@ -86,35 +86,35 @@ vocab = [
 
 ['exist','finnas','finns','fanns','funnits'],
 
-['float or flow','flyta','flyter','flöt','flutit','flow','float'],
+['float or flow','flyta','flyter','floet','flutit','flow','float'],
 
-['freeze','frysa','fryser','frös','frusit'],
+['freeze','frysa','fryser','froes','frusit'],
 
-['get or may','få','får','fick','fått','get','may'],
+['get or may','faa','faar','fick','faatt','get','may'],
 
-['disappear','försvinna','försvinner','försvann','försvunnit'],
+['disappear','foersvinna','foersvinner','foersvann','foersvunnit'],
 
-['pour','gjuta','gjuter','göt','gjutit','cast'],
+['pour','gjuta','gjuter','goet','gjutit','cast'],
 
 ['glide','glida','glider','gled','glidit'],
 
-['fly','flyga','flyger','flög','flugit'],
+['fly','flyga','flyger','floeg','flugit'],
 
-['sell','sälja','säljer','sålde','sålt'],
+['sell','saelja','saeljer','saalde','saalt'],
 
 ['win','vinna','vinner','vann','vunnit'],
 
 ['want','vilja','vill','ville','velat'],
 
-['shriek','tjuta','tjuter','tjöt','tjutit','howl','cry'],
+['shriek','tjuta','tjuter','tjoet','tjutit','howl','cry'],
 
-['be','vara','är','var','varit'],
+['be','vara','aer','var','varit'],
 
 ['know','veta','vet','visste','vetat'],
 
 ['twist','vrida','vrider','vred','vridit','turn'],
 
-['eat','äta','äter','åt','ätit'],
+['eat','aeta','aeter','aat','aetit'],
 
 ['sleep','sova','sover','sov','sovit'],
 
@@ -126,49 +126,49 @@ vocab = [
 
 ['stink','stinka','stinker','stank','stunkit','smell'],
 
-['steal','stjäla','stjäl','stal','stulit'],
+['steal','stjaela','stjael','stal','stulit'],
 
-['battle (infinite has no å)','strida','strider','stred','stridit','fight','battle'],
+['battle','strida','strider','stred','stridit','fight'],
 
-['stroke','stryka','stryker','strök','strukit','iron','delete'],
+['stroke','stryka','stryker','stroek','strukit','iron','delete'],
 
-['stand','stå','står','stod','stått'],
+['stand','staa','staar','stod','staatt'],
 
-['suck','suga','suger','sög','sugit'],
+['suck','suga','suger','soeg','sugit'],
 
 ['smart','svida','svider','sved','svidit','burn','ache'],
 
-['swear (infinitive contains a j)','svärja','svärjer','svor','svurit','curse','vow','swear'],
+['swear (with j)','svaera','svaer','svor','svurit','curse','vow','swear'],
 
-['swear (infinitive contains NO j)','svära','svär','svor','svurit','curse','vow','swear'],
+['swear (without j)','svaera','svaer','svor','svurit','curse','vow','swear'],
 
 ['take','ta','tar','tog','tagit'],
 
 ['seize or catch','gripa','griper','grep','gripit','grab','seize','catch'],
 
-['cry','gråta','gråter','grät','gråtit','weep'],
+['cry','graata','graater','graet','graatit','weep'],
 
-['do','göra','gör','gjorde','gjort','make'],
+['do','goera','goer','gjorde','gjort','make'],
 
 ['have','ha','har','hade','haft'],
 
-['hold','hålla','håller','höll','hållit'],
+['hold','haalla','haaller','hoell','haallit'],
 
-['pinch (starts with k)','knipa','kniper','knep','knipit','pinch'],
+['pinch','knipa','kniper','knep','knipit'],
 
-['tie','knyta','knyter','knöt','knutit','knot'],
+['tie','knyta','knyter','knoet','knutit','knot'],
 
 ['come','komma','kommer','kom','kommit'],
 
-['crawl','krypa','kryper','kröp','krupit'],
+['crawl','krypa','kryper','kroep','krupit'],
 
 ['suffer','lida','lider','led','lidit'],
 
-['let','låta','låter','lät','låtit','allow'],
+['let','laata','laater','laet','laatit','allow'],
 
-['enjoy','njuta','njuter','njöt','njutit'],
+['enjoy','njuta','njuter','njoet','njutit'],
 
-['pinch (starts with n)','nypa','nyper','nöp','nypt','pinch'],
+['pinch','nypa','nyper','noep','nypt'],
 
 ['squeak','pipa','piper','pep','pipit','beep'],
 
@@ -176,35 +176,35 @@ vocab = [
 
 ['rip','riva','river','rev','rivit','tear','scratch'],
 
-['roar','ryta','ryter','röt','rutit'],
+['roar','ryta','ryter','roet','rutit'],
 
-['see','se','ser','såg','sett'],
+['see','se','ser','saag','sett'],
 
 ['sit','sitta','sitter','satt','suttit'],
 
-['sing','sjunga','sjunger','sjöng','sjungit'],
+['sing','sjunga','sjunger','sjoeng','sjungit'],
 
-['sink','sjunka','sjunker','sjönk','sjunkit'],
+['sink','sjunka','sjunker','sjoenk','sjunkit'],
 
 ['shine','skina','skiner','sken','skinit'],
 
-['shoot','skjuta','skjuter','sköt','skjutit'],
+['shoot','skjuta','skjuter','skoet','skjutit'],
 
-['scream','skrika','skriker','skrek','skrikit','shriek'],
+['scream','skrika','skriker','skrek','skrikit'],
 
 ['write','skriva','skriver','skrev','skrivit'],
 
-['brag','skryta','skryter','skröt','skrutit'],
+['brag','skryta','skryter','skroet','skrutit'],
 
-['cut','skära','skär','skar','skurit'],
+['cut','skaera','skaer','skar','skurit'],
 
 ['tear','slita','sliter','slet','slitit','wear','work'],
 
-['punch','slå','slår','slog','slagit'],
+['punch','slaa','slaar','slog','slagit'],
 
-['fight (infinite has an å)','slåss','slåss','slogs','slagits','battle'],
+['fight','slaass','slaass','slogs','slagits'],
 
-['sneak','smyga','smyger','smög','smugit'],
+['sneak','smyga','smyger','smoeg','smugit'],
 
 ['smile','le','ler','log','lett'],
 
@@ -228,33 +228,33 @@ vocab = [
 
 ['be silent','tiga','tiger','teg','tigit'],
 
-['say','säga','säger','sade','sagt'],
+['say','saega','saeger','sade','sagt'],
 
-['grow','växa','växer','växte','vuxit'],
+['grow','vaexa','vaexer','vaexte','vuxit'],
 
 ['swim','simma','simmar','sam','summit'],
 
-['lie down','ligga','ligger','låg','legat','lie'],
+['lie down','ligga','ligger','laag','legat','lie'],
 
-['lie (tell untruth)','ljuga','ljuger','ljög','ljugit','lie'],
+['lie','ljuga','ljuger','ljoeg','ljugit'],
 
 ['fold','vika','viker','vek','vikit'],
 
-['smoke','ryka','ryker','rök','rykt'],
+['smoke','ryka','ryker','roek','rykt'],
 
-['shiver','rysa','ryser','rös','ryst'],
+['shiver','rysa','ryser','roes','ryst'],
 
-['dive','dyka','dyker','dök','dykt'],
+['dive','dyka','dyker','doek','dykt'],
 
 ['spread','sprida','sprider','spred','spritt'],
 
-['snap','smälla','smäller','small','smällt'],
+['snap','smaella','smaeller','small','smaellt'],
 
-['melt','smälta','smälter','smalt','smält'],
+['melt','smaelta','smaelter','smalt','smaelt'],
 
-['obey','lyda','lyder','löd','lytt'],
+['obey','lyda','lyder','loed','lytt'],
 
-['sneeze','nysa','nyser','nös','nyst'],
+['sneeze','nysa','nyser','noes','nyst'],
 
 ['be able to','kunna','kan','kunde','kunnat','can'],
 
@@ -262,28 +262,29 @@ vocab = [
 
 ['give','giva','giver','gav','givit'],
 
-['accustom','vänja','vänjer','vande','vant','adapt'],
+['accustom','vaenja','vaenjer','vande','vant','adapt'],
 
-['starve','svälta','svälter','svalt','svultit'],
+['starve','svaelta','svaelter','svalt','svultit'],
 
-['force','tvinga','tvinger','tvang','tvungit','make'],
+['force','tvinga','tvinger','tvang','tvungit'],
 
-['drink alcohol','supa','super','söp','supit','drink'],
+['drink alcohol','supa','super','soep','supit','drink'],
 
 ['climb','stiga','stiger','steg','stigit'],
 
-['go','gå','går','gick','gått'],
+['go','gaa','gaar','gick','gaatt'],
 
-['simmer','sjuda','sjuder','sjöd','sjudit','seethe','boil'],
+['simmer','sjuda','sjuder','sjoed','sjudit','seethe','boil'],
 
-['close','sluta','sluter','slöt','slutit','finish'],
+['close','sluta','sluter','sloet','slutit','finish'],
 
 ['live','leva','lever','levde','levat'],
 
-['please','glädja','gläder','gladde','glatt'],
+['please','glaedja','glaeder','gladde','glatt'],
 
-['lay','lägga','lägger','lade','lagt']
+['lay','laegga','laegger','lade','lagt']
 ]
+
 
 tries = 0
 right = 0
