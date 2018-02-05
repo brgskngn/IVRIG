@@ -26,4 +26,4 @@ New in version 2.0:
 - Added some more verbs
 - Added some more alternate English translations for certain verbs
 - When a Swedish verb has multiple very different meanings in English, the program now mentions all the most important ones. For example, "flyta" is asked for as "the word for flow or float". When the program asks for an English translation it will accept both "flow" and "float" of course. It merely mentions both to maximise learning effect.
-- The program text is yellow and blue now for maximum Swedish flair... and for better readability. Currently only works on Linux.
+- The program text is yellow and blue now for maximum Swedish flair... and for better readability. Doesn't work on Windows before Windows 10 because the operating systems don't support coloured text in the console.
