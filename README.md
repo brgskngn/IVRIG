@@ -7,7 +7,7 @@ The Irregular Verbs Really Interesting Game (IVRIG) is a small, simple program w
 How to install: Install Ruby.
 https://www.ruby-lang.org/
 
-Download the Ivrig files (green button on the top right). Unzip the archive. Double-click one of the Ivrig files (Windows) or run it in the terminal (Linux). Done.
+Download the Ivrig files (green button on the top right). Unzip the archive. Double-click one of the Ivrig files (Windows) or run it in the terminal (Linux). Done. Should also work on a Mac but I haven't tested it.
 
 There are two different versions:
 - Ivrig.rb: this is the default version.
