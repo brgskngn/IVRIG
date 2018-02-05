@@ -1,8 +1,8 @@
 chronicle = 0
 
-# If you want the program to chronicle your practice, please make sure there's no # before the two lines after this paragraph, and put the file directory you want the chronicle to be in into the "" in the next line!
+# If you want the program to chronicle your practice, please make sure there's no # before the two lines after this paragraph, and put the file directory you want the chronicle to be in into the "" in the next line! Windows users: please remember to use forward slashes (/), not backslashes (\) and make sure you put the chronicle file into your user folder (C:/Users/[Your Username]/[Whichever folder you want]), otherwise the program will probably give an error message when you try to use the chronicle feature.
 
-#Dir.chdir ("C:/EXAMPLE)
+#Dir.chdir ("C:/EXAMPLE")
 #chronicle = 1
 
 ####
