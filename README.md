@@ -16,12 +16,12 @@ There are two different versions:
 Apart from that, the versions are the same.
 
 Some more notes:
-- There are about a hundred verbs in here. It's probably not an exhaustive list of all relevant verbs though.
+- There are about 120 verbs in here. It's probably not an exhaustive list of all relevant verbs though.
 - Where there exist alternate forms of a verb, I chose the more irregular one. So, for example, this program uses “simma - simmar - sam - summit” even though “simma - simmar - simmade - simmat” is also correct.
-- Many verbs have more than one meaning. This program uses what I consider the 'main' or most common meaning but depending on the verb it allows up to two alternate translations. For example, the main translation of 'rinna' is 'flow' but 'run' is also accepted.
+- Many verbs have more than one meaning. This program uses what I consider the 'main' or most common meaning but depending on the verb it allows up to four alternate translations. For example, the main translation of 'rinna' is 'flow' but 'run' is also accepted.
 
 New in version 2.0:
-- The program can now create a chronicle file that keeps track of when you practiced and how many points you got. To activate this, open the Ivrig file you want to use in a text editor and follow the instructions in the beginning of the file.
+- The program can now create a chronicle file that keeps track of when you practiced and how many points you got. To activate this, open the Ivrig file you want to use in a programming editor (for example Vim - or on Linux just the normal text editor) and follow the instructions at the beginning of the file.
 - Sometimes multiple Swedish verbs have the same meaning in English. For example, both "falla" and "dimpa" mean "to fall". The program now gives you a hint which verb is meant if it presents you with the English form.
 - Added some more verbs
 - Added some more alternate English translations for certain verbs
